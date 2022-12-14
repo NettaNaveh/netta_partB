@@ -11,6 +11,8 @@ class Person {
     const person1 = new Person('Inbal', 'Barbi', 'inbal@gmail.com', '0524545454')
     const person2 = new Person('Itai', 'Naveh', 'itai@gmail.com', '0524548888')
 
+let ShoppingList = [];
+
 // vegetables
 const items = [
     {
@@ -63,8 +65,8 @@ function showItems() {
         //     createCard(Stars, items[i]);
         // }
     }
-
 }
+
 function createCard(container, item) {
     const containerDiv = document.createElement('div');
     const image = document.createElement('img');
@@ -76,23 +78,35 @@ function createCard(container, item) {
     image.classList.add('card-image');
     title.classList.add('card-title');
     price.classList.add('card-price');
+    btn_addItem.classList.add('card-btn');
     image.src = item.image;
     title.innerText = item.name;
     price.innerText = "Price: " + item.price + "₪ per kg";
     btn_addItem.innerText = 'Add To Cart';
     btn_addItem.onclick = () => {
-         addToCart(item);
+         addToShoppingList(item);
     };
-
 
    containerDiv.appendChild(image);
     containerDiv.appendChild(title);
     containerDiv.appendChild(price);
-    // containerDiv.appendChild(addToCartButton);
+    containerDiv.appendChild(btn_addItem);
     container.appendChild(containerDiv);
 }
 
+function addToShoppingList(item){
+   ShoppingList.push({name:item.name,
+                        price:item.price})
+    console.log(ShoppingList)
+}
+const nameInput = document.querySelector('#name')
 showItems();
+
+function check(){
+    const nameInput = document.querySelector('#shopping-cart')
+    console.log(nameInput)
+    console.log('hello im here')
+}
 
 //
 //     const cakesSection = document.getElementById('cakes');

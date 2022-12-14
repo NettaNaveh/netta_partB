@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+        <script src="functions.js" defer></script>
 </head>
-<body>
 
+<body onload="check();">
 
     <div>
-        <h1 class="cart">My cart</h1>
+        <h1 class="cart">My Shopping Cart</h1>
 
         <div class="small-container cart-page">
-            <table id="shopping-cart">
+            <table id="shopping-cart" >
                 <tr>
                     <th>Product</th>
                     <th>Quantity</th>
@@ -23,5 +24,33 @@
             <div class="subtotal" id="total-price"></div>
         </div>
     </div>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Joe</td>
+            <td>Joe@gmail.com</td>
+            <td>23</td>
+        </tr>
+    <tr>
+            <td>Rebecca</td>
+            <td>r@gmail.com</td>
+            <td>33</td>
+        </tr>
+    <tr>
+            <td>Moshe</td>
+            <td>m@gmail.com</td>
+            <td>15</td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>

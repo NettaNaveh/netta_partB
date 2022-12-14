@@ -11,6 +11,14 @@ h2 {
     padding: 10px;
     margin: 10px;
 }
+h3 {
+    color: mediumblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
 .header{
     color: #e79c52;
   text-align:center;
@@ -38,7 +46,7 @@ h2 {
 .container {
     background-color: #87b289;
   display: flex;
-    height: 400px;
+    height: fit-content;
   justify-content: center;
 }
 
@@ -80,6 +88,23 @@ h2 {
 .card-title {
     text-align: center;
 }
+.card-btn{
+    background-color: #fdfaf1;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border: 2px black solid;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    margin: 3px;
+    /*padding-right: 15px;*/
+    /*flex-basis: 100px;*/
+    /*flex: 1 1 200px;*/
+    /*flex: 1;*/
+}
+
 
 .cart-info {
     width: 5px;
