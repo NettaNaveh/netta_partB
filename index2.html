@@ -9,7 +9,34 @@ maximum-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>לקוח חדש</h1>
+    <div class="container_sign_up">
+<!--
+   <div class="header">
+-->
+<!--             <p id = "site_name"> Roomeet</p>-->
+<!--  need to handle navbars - back to menu          -->
+<!--            <nav class="nav_bar">-->
+<!--                <ul class="nav-list">-->
+<!--                    <li class="list-item"><a href="./openingScreen.html">Home</a></li>-->
+<!--                    <li class="list-item"><a href="./about.html">About Us</a></li>-->
+<!--                </ul>-->
+<!--            </nav>-->
+<!--        </div>-->
+
+        <div id="Container_Header">
+            Create new Account
+        </div>
+        <div class = sign_up_page >
+            <form id="signUp_form" action="/newUser" method="POST" onsubmit="return SignUpCheck()">
+                <label for="Full_Name">Full Name</label><br>
+                <input type="text" required id="Full_Name" name="Full_Name"><br>
+                <label for="email">Email</label><br>
+                <input type="email" required id="email" name="email"><br>
+
+
+
+
+    <h1>New User</h1>
     <p>My first paragraph.</p>
 </body>
 </html>
@@ -34,7 +61,7 @@ maximum-scale=1.0, minimum-scale=1.0">
     Password:
     <input type="password">
     <br>
-    אישור סיסמה Password:
+     Confirm Password:
     <input type="please enter again your password">
     <br>
     <input type="submit" value="Send Form">
