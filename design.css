@@ -27,7 +27,7 @@ h1 {
     font-family: cursive;
     font-style: oblique;
     text-align: center;
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
 padding-bottom: 5px;
 }
 
@@ -43,19 +43,19 @@ h3 {
     margin: 10px;
 }
 #Container_Logo{
-  grid-area: logo;
+  grid-area: initial;
   display: block;
   margin-left: auto;
   margin-right: auto;
     justify-items: left;
-    padding-left:40px ;
+    padding-left:20px ;
+    margin-top: 2px;
 }
 #logo{
   width: 100px;
   width: 100px;
    float: left;
 }
-
 
 .totalPrice {
     margin-top: 10px;
@@ -106,8 +106,10 @@ h3 {
     height: fit-content;
   justify-content: center;
 }
+
+
 .cart_container{
-        background-color: #87b289;
+        background-color: #ffffff;
     text-align: center;
     display: flex;
     border: 2px black solid;
@@ -117,24 +119,27 @@ h3 {
     justify-content: center;
     padding: 10px;
     /*margin: 10px;*/
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 
 }
-.end_container{
 
-}
 #first_container{
   display: grid;
   grid-template-areas:
-  'logo Header nav';
+  'logo header header'
+'nav header header';
 }
 
 .nav {
   font-weight: bold;
+    font-family: cursive;
   font-size: 17px;
-  display: right;
+  /*display: list-item;*/
+    float: left;
+    padding: 3px;
+    grid-gap: 5px;
 }
 
 
@@ -213,7 +218,6 @@ h3 {
 .card-title {
     text-align: center;
 }
-
 
 
 .cart-info {

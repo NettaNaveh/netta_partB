@@ -7,20 +7,22 @@
 
         <script src="functions.js" defer></script>
 </head>
-
 <body onload="createShoppingListCart();">
-
-<div class="nav_container">
-    <nav class="navigation">
+<div id="Container_Logo"><img src="farmer1-removebg.png"  id="logo"></div>
+ <div id="header">
+      Alexander Farm
+      </div>
+ <div class="header">My Shopping Cart
+   <img src="basket-vegetables.png"  id="basketImg" ></div>
+<br>
+<div >
+    <nav class="nav">
         <ul>
 <!--           <li ><a href="./home_page.html" >Home page</a></li>-->
             <li ><a href="./vegetables.html" >Back to shop</a></li>
         </ul>
    </nav>
 </div>
-
-    <div >
-        <h1 class="cart">My Shopping Cart</h1>
 
         <div class="cart_container">
             <table id="shopping-cart" >
@@ -31,35 +33,11 @@
                     <th></th>
                 </tr>
             </table>
+
         </div>
-      <div class="cart_container" id="total-price">Total price 0 ₪</div>
-    </div>
+      <div class="card-title" id="total-price">Total price 0 ₪</div>
     <a href="./customer_details.html" class="card-btn">Complete order</a>
 
-
-<!--// customer details-->
-<!--<details>-->
-<!--    <summary>-->
-<!--        Complete order-->
-<!--    </summary>-->
-<!--      <div id="form_container" class="confirm-card" >-->
-<!--          <p>Please fill in your personal details </p><br>-->
-<!--        <form id="order_form"  method="get">-->
-<!--            <label for="firstName">First Name</label>-->
-<!--            <input form="order_form" required type="text" id="firstName" name="firstName" value="" min="2" class="input_customer" placeholder="Enter your first name..">-->
-<!--            <br>-->
-<!--            <label for="lastName">Last Name</label>-->
-<!--            <input form="order_form" required type="text" id="lastName" name="lastName" value="" min="2" class="input_customer" placeholder="Enter your last name..">-->
-<!--            <br>-->
-<!--            <label for="email">Email </label>-->
-<!--            <input type="email" required id="email" name="email" class="input_customer" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email..">-->
-<!--            <br>   <br>-->
-
-<!--            <button type="submit" id="confirm_details" >Submit</button>-->
-
-<!--        </form>-->
-<!--    </div>-->
-<!--</details>-->
-
+</section>
 </body>
 </html>

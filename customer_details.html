@@ -9,8 +9,20 @@
     <title>Alexander Farm</title>
 </head>
 <body>
-<div class="top-container">Customer details </div>
+<div id="Container_Logo"><img src="farmer1-removebg.png"  id="logo"></div>
+ <div id="header">
+      Alexander Farm
+      </div>
+<div class="header">Customer details </div>
 <br>
+<div >
+    <nav class="nav">
+        <ul>
+<!--           <li ><a href="./home_page.html" >Home page</a></li>-->
+            <li ><a href="./vegetables.html" >Back to shop</a></li>
+        </ul>
+   </nav>
+</div>
  <h3>Please fill in your personal details </h3>
     <div id="form_container" class="confirm-card">
         <form id="order_form" action="./order_confirmation.html" method="get">
@@ -26,7 +38,7 @@
             <input type="email" required id="email" name="email" class="input_customer" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email..">
             <br>
             <button class= card-btn type="submit" id="confirm_details" onclick="clearShoppingList()">Submit</button>
-<
+
         </form>
 
     </div>
