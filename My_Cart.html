@@ -34,47 +34,32 @@
         </div>
       <div class="cart_container" id="total-price">Total price 0 ₪</div>
     </div>
-
+    <a href="./customer_details.html" class="card-btn">Complete order</a>
 
 
 <!--// customer details-->
-<details>
-    <summary>
-        Complete order
-    </summary>
-      <div id="form_container" class="confirm-card">
-          <p>Please fill in your personal details </p><br>
-        <form id="order_form" action="/order_confirmation.html" method="get">
-            <label for="firstName">First Name</label>
-            <input form="order_form" required type="text" id="firstName" name="firstName" value="" min="2" class="input_customer" placeholder="Enter your first name..">
-            <br>
-            <label for="lastName">Last Name</label>
-            <input form="order_form" required type="text" id="lastName" name="lastName" value="" min="2" class="input_customer" placeholder="Enter your last name..">
-            <br>
-            <label for="email">Email </label>
-            <input type="email" required id="email" name="email" class="input_customer" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email..">
-            <br>   <br>
+<!--<details>-->
+<!--    <summary>-->
+<!--        Complete order-->
+<!--    </summary>-->
+<!--      <div id="form_container" class="confirm-card" >-->
+<!--          <p>Please fill in your personal details </p><br>-->
+<!--        <form id="order_form"  method="get">-->
+<!--            <label for="firstName">First Name</label>-->
+<!--            <input form="order_form" required type="text" id="firstName" name="firstName" value="" min="2" class="input_customer" placeholder="Enter your first name..">-->
+<!--            <br>-->
+<!--            <label for="lastName">Last Name</label>-->
+<!--            <input form="order_form" required type="text" id="lastName" name="lastName" value="" min="2" class="input_customer" placeholder="Enter your last name..">-->
+<!--            <br>-->
+<!--            <label for="email">Email </label>-->
+<!--            <input type="email" required id="email" name="email" class="input_customer" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email..">-->
+<!--            <br>   <br>-->
 
-            <div class="popup" onclick="finishOrderPopUp()">Submit
-                <span class="popuptext" id="myPopup">
-                  <p>
-                    Your order has been received by the system, we are preparing it for you.
-                    You can pick it up from the farm during our business hours.
-                    Payment must be made upon collection.
-                    Please note, cash payment only!
-                  </p>
-                </span>
-            </div>
-<!--            <button type="submit" id="confirm_details">Submit</button>-->
-        </form>
-    </div>
-</details>
+<!--            <button type="submit" id="confirm_details" >Submit</button>-->
 
-
-<!--<a class="OKbtn" onclick="./">&#10094;</a>-->
-
-<!-- <a href="./customer_details.html" class="btn">Complete Order</a>-->
-
+<!--        </form>-->
+<!--    </div>-->
+<!--</details>-->
 
 </body>
 </html>

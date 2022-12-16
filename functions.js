@@ -160,10 +160,15 @@ function createShoppingListCart() {
 
 }
 
-function finishOrderPopUp() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
+function clearShoppingList(){
+    sessionStorage.clear();
 }
+//
+// function finishOrderPopUp() {
+//   var popup = document.getElementById("myPopup");
+//   popup.classList.toggle("show");
+//   ShoppingList.Clear();
+// }
 
 // function check(){
 //     const nameInput = document.querySelector('#shopping-cart')

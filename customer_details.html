@@ -10,10 +10,10 @@
 </head>
 <body>
 <div class="top-container">Customer details </div>
-
-
+<br>
+ <h3>Please fill in your personal details </h3>
     <div id="form_container" class="confirm-card">
-        <form id="order_form" action="/order_confirmation.html" method="get">
+        <form id="order_form" action="./order_confirmation.html" method="get">
 
 
             <label for="firstName">First Name</label>
@@ -25,12 +25,12 @@
             <label for="email">Email </label>
             <input type="email" required id="email" name="email" class="input_customer" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email..">
             <br>
-         <button type="submit" id="confirm_details">Submit</button>
-
+            <button class= card-btn type="submit" id="confirm_details" onclick="clearShoppingList()">Submit</button>
+<
         </form>
 
     </div>
-      <a href="./vegetables.html" class="btn">Submit</a>
+
 
 </body>
 </html>
