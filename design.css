@@ -1,3 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #87b289;
+    color: white;
+    line-height: 1.8;
+    text-align: center;
+}
+.OKbtn{
+     background-color: #fdfaf1;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border: 2px black solid;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    margin: 3px;
+}
 
 h1 {
     color: #2a3cab;
@@ -17,10 +40,12 @@ h3 {
     margin: 10px;
 }
 
-
+.totalPrice {
+    margin-top: 10px;
+}
 
 .header{
-    color: #e79c52;
+    color: #145017;
   text-align:center;
   grid-area: Header;
   letter-spacing: 1px;
@@ -41,15 +66,36 @@ h3 {
   font-weight: bold;
   margin-bottom: 10px;
 }
-
+.top-container {
+    padding: 5% 10% 0% 10%;
+    height: fit-content;
+    text-align: center;
+    background-color: #145017;
+}
 
 .container {
     background-color: #87b289;
+    text-align: center;
   display: flex;
     height: fit-content;
   justify-content: center;
 }
+.cart_container{
+        background-color: #87b289;
+    text-align: center;
+    display: flex;
+    border: 2px black solid;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
 
+}
+.end_container{
+
+}
 
 .nav_container{
     background-color: #fdfaf1;
@@ -77,6 +123,7 @@ h3 {
     padding: 10px;
     box-shadow: 0 5px 10px var(--MyGrey);
     transition: all 0.4s ease;
+    flex-direction: column;
     width: 225px;
 }
 .card-image {
@@ -99,6 +146,7 @@ h3 {
     height: fit-content;
     color: black;
     margin: 3px;
+    padding: 5px;
     /*padding-right: 15px;*/
     /*flex-basis: 100px;*/
     /*flex: 1 1 200px;*/
@@ -111,6 +159,26 @@ h3 {
     height: 5px;
     text-align: center;
 }
+/*#shopping-cart{*/
+/*    */
+/*}*/
+table {
+    border-collapse: collapse;
+/*border-style: solid;*/
+}
+
+th {
+    min-width: 100px;
+}
+
+td {
+    max-width: 100px;
+}
+
+tr {
+    border-bottom: 1px solid purple;
+}
+
 
 .row {
     display: flex;
@@ -205,7 +273,7 @@ h3 {
     --MyLighterBlue: #6ecbde;
     --MyGreyBlue: #b5d4e7;
     --MyLight:  #a4badc;
-    --MyPurple: #87b289;
+    --MyPurple: #ffffff;
     --MyDarkerPurple: #8630d1;
     --MyRed: #db2505;
     --MyGrey: #808080;
