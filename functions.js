@@ -143,17 +143,18 @@ function createShoppingListCart() {
     ShoppingList=  sessionStorage.getItem('myArray');
     ShoppingList=  JSON.parse(ShoppingList);
     const cart = document.getElementById('shopping-cart');
-    const totalPrice = document.getElementById('total-price');
     let finalPrice = 0;
+    const totalContainer = document.getElementById('total-price');
+
     console.log(ShoppingList)
         for (let i = 0; i < ShoppingList.length; i++) {
             console.log(ShoppingList[i])
             createCartItem(cart, ShoppingList[i], i);
             finalPrice += ShoppingList[i].price;
         }
-        container.appendChild(container);
+
         console.log(finalPrice)
-        totalPrice.innerText = "Total price: " + finalPrice + "₪";
+        totalContainer.innerText = "Total price: " + finalPrice + "₪";
 
             // total-price.innerText = totalPrice.price + "₪";
 
