@@ -160,7 +160,10 @@ function createShoppingListCart() {
 
 }
 
-
+function finishOrderPopUp() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
 
 // function check(){
 //     const nameInput = document.querySelector('#shopping-cart')
