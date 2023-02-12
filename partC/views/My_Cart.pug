@@ -1,0 +1,25 @@
+extends layout
+block content
+    .header
+        | My Shopping Cart
+        //img#basketImg(src='Graphics/basket-vegetables.png')
+    br
+    div
+    .cart_container
+        table#shopping-cart
+            tr
+                th Item
+                th Quantity
+                th Price
+                th
+            tbody
+                each item in cart
+                    tr
+                        td #{item.name}
+                        td #{item.qty}
+                        td #{item.price}
+
+    #total-price.card-title Total price #{sum} &#x20AA;
+    a.btn(href='/customer_detailes') Complete order
+
+

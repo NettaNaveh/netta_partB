@@ -1,0 +1,228 @@
+* {
+    margin: 10px;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e3dbce;
+    color: #145017;
+    line-height: 1.8;
+    text-align: center;
+}
+h1 {
+    color: #145017;
+    font-family: cursive;
+    font-style: oblique;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+h2 {
+    color: #145017;
+    padding: 10px;
+    margin: 10px;
+}
+#header{
+    color: #145017;
+  text-align:center;
+  grid-area: Header;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+    font-family: cursive;
+  font-size: 60px;
+  font-weight: bold;
+    margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#Container_Logo{
+    grid-area: initial;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: left;
+    padding-left:20vm ;
+    margin-top: 2px;
+}
+#logo{
+  width: 100px;
+  width: 100px;
+   float: left;
+}
+.nav {
+  font-weight: bold;
+    font-family: cursive;
+  font-size: 17px;
+    /*float: initial;*/
+    padding: 1vw;
+    grid-gap: 5px;
+    display: flex;
+}
+.nav_container{
+    background-color: #fdfaf1;
+    display: inline;
+    justify-content: space-around;
+    border: 2px black solid;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    margin: 10px;
+    padding-right: 15px;
+    /*flex-basis: 100px;*/
+    /*flex: 1 1 200px;*/
+    /*flex: 1;*/
+
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.cardsContainer {
+    /*text-align: center;*/
+    display: flex;
+    /*height: fit-content;*/
+    /*justify-content: center;*/
+    flex-direction: row;
+}
+
+/*************************          card          ****************************/
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #87b289;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 5px 10px var(--MyGrey);
+    transition: all 0.4s ease;
+    flex-direction: row-reverse;
+    width: 225px;
+}
+
+.confirm-card{
+    background-color: #b0ccb0;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 5px 10px var(--MyGrey);
+    transition: all 0.4s ease;
+    flex-direction: column;
+    width: 225px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+.cart_container{
+        background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    border: 2px black solid;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card-title {
+    text-align: center;
+}
+button {
+  border-radius: 8px;
+  background-color: #eeeeee;
+  border: 2px solid ;
+  color: black;
+  font-weight: bold;
+  font-family: Aboreto;
+  letter-spacing: 2px;
+  padding: 12px 45px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 1%;
+}
+btn {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: #fff 1px solid;
+    border-radius: 30px;
+    margin-top: 40px;
+    opacity: 0;
+
+    animation: btn;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+    /*transition-property: transform, background-color, color;*/
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+.card-btn {
+    display: inline-block;
+    color: #0a0a0a;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: #0a0a0a 2px solid;
+    border-radius: 30px;
+    margin-top: 20px;
+    opacity: 0;
+
+    animation: card-btn;
+    animation-duration: 1s;
+    /*animation-delay: 3s;*/
+    animation-fill-mode: forwards;
+
+    /*transition-property: transform, background-color, color;*/
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+
+.cardImage {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.cart-info {
+    width: 5px;
+    height: 5px;
+    text-align: center;
+}
+
+.input_customer{
+  padding: 7px;
+  border: 2px solid var(--MyGrey);
+  border-radius: 8px;
+}
+
+.Column, Row {
+  display: flex;
+}
+.Row {display: flex;
+  flex-direction: row;
+}
+.ab{
+    flex-basis: 33.33%;
+}
+.Column {
+  flex-direction: column;
+}
